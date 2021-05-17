@@ -1,0 +1,97 @@
+---
+title: "NC Bike Crashes"
+author: ""
+date: ""
+output: 
+  html_document:
+    toc: true
+    number_sections: false
+    toc_float: true
+    df_print: paged
+---
+
+```{r set-up, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE,
+                      comment = "#>", highlight = TRUE,
+                      fig.align = "center")
+```
+
+# Getting started
+
+1. Clone your repo `appex03-[github_name]` on GitHub to create a new project
+   in RStudio Cloud under the STA 199 class space.
+
+2. Configure git
+      ```{r config-git-ex, eval=FALSE}
+      library(usethis)
+      use_git_config(user.name="your name", user.email="your email")
+      ```
+
+# Packages and Data
+
+Let's load package `tidyverse`.
+
+```{r load-packages}
+library(tidyverse)
+```
+
+To load the data we will use function `read_csv2()` and save the data frame
+as an object named `ncbikecrash`.
+
+```{r}
+ncbikecrash <- read_csv2("data/nc_bike_crash.csv")
+```
+
+# Tasks
+
+## Task 1
+
+Identify the most common driver speed limit for when bike crashes occur.
+
+```{r task-1}
+
+```
+
+## Task 2
+
+Filter `ncbikecrash` for crashes in residential areas where the driver age
+group is 0-19.
+
+```{r task-2}
+
+```
+
+## Task 3
+
+What is the mean hour for when a crash occurs in Durham County for each month?
+
+```{r task-3}
+
+```
+
+## Task 4
+
+Plot your result from Task 3.
+
+```{r task-4}
+
+```
+
+# Submission
+
+## Stage, commit and push
+
+1. Stage your modified files.
+2. Commit your changes with an informative message.
+3. Push your changes to your GitHub repo.
+4. Verify your files were updated on GitHub.
+
+# Slide notes
+
+```{r}
+
+```
+
+# References
+
+1. Bicycle Crashes. (2020). Chapelhillopendata.org. Retrieved 21 January 2020, from https://www.chapelhillopendata.org/explore/dataset/bicycle-crash-data-chapel-hill-region/information/?disjunctive.city&disjunctive.county&disjunctive.crashday&disjunctive.crashsevr&disjunctive.crashyear
